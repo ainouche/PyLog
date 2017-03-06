@@ -16,6 +16,15 @@ Pylog is Prolog-ish interpreter written in Python 3. It originated as a final pr
 
 ## Using PyLog
 
+You can start the repl by typing `python pylog.py`:
+```
+$ python pylog.py
+
+Prolog-ish Interpreter
+#quit to quit
+pylog>
+```
+
 ### Facts
 
 Facts are the building blocks of PyLog. Defining a fact adds the fact to the environment. You define a fact by following it with a period:
