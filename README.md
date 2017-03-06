@@ -30,20 +30,20 @@ pylog>
 Facts are the building blocks of PyLog. Defining a fact adds the fact to the environment. You define a fact by following it with a period:
 ```
 pylog> happy(hannah).
-Relation happy defined
+Fact happy defined
 ```
 
 The word inside the parentheses is a constant. Constants are always lowercase. Facts can be defined as relations between multiple constants:
 
 ```
 pylog> loves(mary,sally).
-Relation loves defined
+Fact loves defined
 ```
 
 However, once you define a fact/relation it must always be given the same number of constants:
 ```
 pylog> loves(hannah).
-Error: Relation loves takes 2 argument(s), 1 given.
+Error: Fact loves takes 2 argument(s), 1 given.
 ```
 
 ### Query
@@ -95,15 +95,29 @@ Rule foobar defined
 Facts have to satisfy all of the rule's conditions in order to satisfy the rule:
 ```
 pylog> bar(bob).
-Relation bar defined
+Fact bar defined
 pylog> foo(bob).
-Relation foo defined
+Fact foo defined
 pylog> foobar(bob)?
 yes
 pylog> bar(joe).
 pylog> foobar(joe)?
 no
 ```
+### Env
+The `#env` command prints out everything that is currently in the environment. Here we see how everything is stored:
+
+```
+pylog> #env
+Relations:
+{'loves': [['mary', 'sally'], ['bob', 'sally'], ['john', 'sally'], ['mary', 'john']], 'foo': [['bob']], 'bar': [['bob'], ['joe']], 'happy': [['hannah']]}
+Rules:
+{'foobar': {'body': [('foo', (['X'], {})), ('bar', (['X'], {}))], 'vars': ['X']}, 'notsad': {'body': [('happy', (['X'], {}))], 'vars': ['X']}}
+```
+
+### Quit
+You can quit PyLog by typing `#quit`. See you later!
+
 
 ## Future Work
 - Implement recursive rules

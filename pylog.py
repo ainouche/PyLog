@@ -231,12 +231,12 @@ def shell ():
                     print("Error: Can't define a fact with a variable!")
                 elif name in relations:
                     if len(constants) != len(relations[name][0]):
-                        print("Error: Relation {} takes {} argument(s), {} given.".format(name,len(relations[name][0]),len(constants)))
+                        print("Error: Fact {} takes {} argument(s), {} given.".format(name,len(relations[name][0]),len(constants)))
                     else:
                         relations[name].append(constants.asList())
                 else:
                     relations[name] = [constants.asList()]
-                    print("Relation {} defined".format(name))
+                    print("Fact {} defined".format(name))
 
 
         except Exception as e:
