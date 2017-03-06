@@ -110,9 +110,11 @@ The `#env` command prints out everything that is currently in the environment. H
 ```
 pylog> #env
 Relations:
-{'loves': [['mary', 'sally'], ['bob', 'sally'], ['john', 'sally'], ['mary', 'john']], 'foo': [['bob']], 'bar': [['bob'], ['joe']], 'happy': [['hannah']]}
+{'loves': [['mary', 'sally'], ['bob', 'sally'], ['john', 'sally'], ['mary', 'john']], 'foo': [['bob']],
+'bar': [['bob'], ['joe']], 'happy': [['hannah']]}
 Rules:
-{'foobar': {'body': [('foo', (['X'], {})), ('bar', (['X'], {}))], 'vars': ['X']}, 'notsad': {'body': [('happy', (['X'], {}))], 'vars': ['X']}}
+{'foobar': {'body': [('foo', (['X'], {})), ('bar', (['X'], {}))], 'vars': ['X']}, 'notsad': {'body': 
+[('happy', (['X'], {}))], 'vars': ['X']}}
 ```
 
 ### Quit
