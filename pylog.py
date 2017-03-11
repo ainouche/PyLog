@@ -4,7 +4,7 @@
 #
 # Author: Hannah.Twigg-Smith@students.olin.edu
 #
-# Remarks:
+# Notes:
 # Constants and variables are stored in the environment as a dictionary of
 # nested lists.
 # True prolog finds unifications sequentially, in that it only finds another
