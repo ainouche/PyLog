@@ -1,6 +1,6 @@
 # PyLog
 
-Pylog is Prolog-ish interpreter written in Python 3\. It originated as a final project for my Programming Languages class, but I wanted to take it further because this stuff is neat.
+Pylog is a mini, very incomplete Prolog-ish interpreter written in Python 3 for fun\.
 
 ## Grammar
 
