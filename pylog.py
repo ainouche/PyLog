@@ -2,7 +2,7 @@
 # PyLog
 # A basic Prolog interpreter written in Python.
 #
-# Author: Hannah.Twigg-Smith@students.olin.edu
+# Author: htwiggsmith@gmail.com, @branchwelder
 #
 # Notes:
 # Constants and variables are stored in the environment as a dictionary of
